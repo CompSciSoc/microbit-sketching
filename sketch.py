@@ -13,6 +13,7 @@ def move():
 pixel = 0
 while True:
     if button_a.was_pressed():
+        display.set_pixel(x, y, pixel)
         move()
         pixel = display.get_pixel(x, y)
 
